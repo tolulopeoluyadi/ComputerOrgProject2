@@ -1,0 +1,17 @@
+my_dict = dict() # can also be my_dict = {}
+
+my_dict['Oldest'] = 'Roqibat'	# inserting a key
+my_dict['Middle'] = 'Tolulope'	# inserting different key
+my_dict['Middle'] = 'Aminat'	# overwriting if same key exists
+my_dict['Youngest'] = 'Fatimat'
+
+del my_dict['Youngest']	# removing a key
+
+print(my_dict['Middle'])	# get a key - returns 'other_value'
+# my_dict['no_key'] 	# Python raises KeyError
+
+if 'Oldest' in my_dict: # check if some_key exists in my_dict - returns True
+    do_sth(True) 
+#if 'no_key' in my_dict: # check if no_key exists in my_dict - returns False
+#	do_sth()
+print(my_dict)
